@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalação do R</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Guia de Instalação do R</h1>
+            <a href="index.html" class="btn">Voltar ao Início</a>
+        </div>
+    </header>
+    <main class="main-content">
+        <section class="installation-guide">
+            <h2>Guia de Instalação Passo a Passo</h2>
+            <ol>
+                <li>
+                    <h3>Baixe o R</h3>
+                    <p>Visite o site oficial do R em <a href="https://cran.r-project.org/" target="_blank">CRAN</a>.</p>
+                </li>
+                <li>
+                    <h3>Selecione Seu Sistema Operacional</h3>
+                    <p>Escolha o link de download apropriado para o seu sistema operacional (Windows, macOS ou Linux).</p>
+                </li>
+                <li>
+                    <h3>Instale no Windows</h3>
+                    <ul>
+                        <li>Baixe o instalador do R para Windows.</li>
+                        <li>Execute o instalador e siga as instruções na tela.</li>
+                        <li>Escolha as configurações padrão para a maioria dos usuários.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Instale no macOS</h3>
+                    <ul>
+                        <li>Baixe o arquivo .pkg para macOS.</li>
+                        <li>Abra o arquivo e siga as instruções na tela para instalar.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Instale no Linux</h3>
+                    <ul>
+                        <li>Abra o terminal.</li>
+                        <li>Adicione o repositório CRAN ao seu sistema de gerenciamento de pacotes.</li>
+                        <li>Atualize a lista de pacotes do sistema.</li>
+                        <li>Instale o R usando o gerenciador de pacotes do seu sistema.</li>
+                    </ul>
+                    <pre><code># Comandos para Debian/Ubuntu
+sudo apt update
+sudo apt install r-base
+# Comandos para Fedora
+sudo dnf install R
+# Comandos para Arch Linux
+sudo pacman -S r</code></pre>
+                </li>
+                <li>
+                    <h3>Verifique a Instalação</h3>
+                    <p>Abra o VSCode vá em extensões, digite R na barra de pesquisa e baixe a primeira extensão que apareceu.</p>
+                    <p>Agora volte a sua pasta de arquivos, crie um arquivo chamado test.r e escreva o comando <code>print("Hello World")</code>, clique no botao de executar e caso o comenda apareça no Prompt significa que funcionou.</p>
+                </li>
+            </ol>
+        </section>
+        <section class="video-tutorial">
+            <h2>Tutorial em Vídeo</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cMjCEiIpvS8?si=7Ki-2smuoWLmgtsI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Feito por: Heitor Leite - 3°C</p>
+    </footer>
+</body>
+</html>

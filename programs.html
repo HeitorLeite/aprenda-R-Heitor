@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs in R</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Programs in R</h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="installation.html">Installation</a></li>
+                    <li><a href="information.html">About R</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+        <section class="programs-intro">
+            <h2>Introduction to R Programs</h2>
+            <p>R is used in various domains, including data analysis, statistical modeling, and machine learning. Here are some examples of programs you can create with R:</p>
+        </section>
+        
+        <section class="program-example">
+            <h2>Example Programs</h2>
+            <div class="example">
+                <h3>Data Analysis</h3>
+                <p>This example demonstrates how to load a dataset and perform basic data analysis using R.</p>
+                <pre><code># Load the dataset
+data <- read.csv("data.csv")
+
+# Summary of the dataset
+summary(data)
+
+# Plot a histogram of a column
+hist(data$column_name)</code></pre>
+            </div>
+            <div class="example">
+                <h3>Statistical Modeling</h3>
+                <p>This example shows how to fit a linear model to a dataset.</p>
+                <pre><code># Load the dataset
+data <- read.csv("data.csv")
+
+# Fit a linear model
+model <- lm(y ~ x, data=data)
+
+# Summary of the model
+summary(model)</code></pre>
+            </div>
+            <div class="example">
+                <h3>Machine Learning</h3>
+                <p>This example demonstrates how to build a simple machine learning model using the caret package.</p>
+                <pre><code># Load the caret package
+library(caret)
+
+# Load the dataset
+data <- read.csv("data.csv")
+
+# Train a model
+model <- train(y ~ x, data=data, method="rpart")
+
+# Print the model
+print(model)</code></pre>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Feito por: Heitor Leite - 3°C</p>
+    </footer>
+</body>
+</html>
