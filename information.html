@@ -1,60 +1,303 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About R</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre R</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <h1>Informações do R</h1>
-            <a href="index.html" class="btn">Voltar ao Início</a>
-        </div>
+      <div class="container">
+        <h1>Informações do R</h1>
+        <a href="index.html" class="btn">Voltar ao Início</a>
+      </div>
     </header>
     <main class="main-content">
-        <section class="history">
-            <h2>História de R</h2>
-            <p>R foi criado por Ross Ihaka e Robert Gentleman na Universidade de Auckland, Nova Zelândia, no início dos anos 1990. Foi inspirado na linguagem S e se tornou uma das linguagens mais populares para análise estatística e ciência de dados. Desde então, o R evoluiu continuamente com contribuições de uma vasta comunidade de desenvolvedores em todo o mundo.</p>
-        </section>
-        
-        <section class="syntax">
-            <h2>Sintaxe Básica</h2>
-            <p>A sintaxe do R é relativamente simples e intuitiva, tornando-o acessível para iniciantes. Aqui estão alguns exemplos básicos:</p>
-            <ul>
-                <li><strong>Atribuição:</strong> <code>x <- 10</code></li>
-                <li><strong>Operações matemáticas:</strong> <code>soma <- x + 5</code></li>
-                <li><strong>Criando Vetores:</strong> <code>vec <- c(1, 2, 3)</code></li>
-                <li><strong>Funções:</strong> <code>média(vec)</code></li>
-            </ul>
-        </section>
-        
-        <section class="variables">
-            <h2>Variáveis</h2>
-            <p>Em R, variáveis ​​são usadas para armazenar valores de dados. Você pode criar uma variável usando o operador de atribuição <code><-</code> ou <code>=</code>.</p>
-            <pre><code>x <- 5
-y = 10
-z <- x + y</code></pre>
-        </section>
-        
-        <section class="functions">
-            <h2>Funções</h2>
-            <p>Funções em R são usadas para executar tarefas específicas. Você pode criar uma função usando a <code>function</code> palavra-chave:</p>
-            <pre><code>adicionar <- função(a, b) {
-retornar (a + b)
-}
+      <section class="history">
+        <h2>A História da Linguagem R</h2>
+        <p>
+          R foi desenvolvido por Ross Ihaka e Robert Gentleman na Universidade
+          de Auckland nos anos 90. Inspirada pela linguagem S, R tornou-se
+          essencial para análises estatísticas e ciência de dados, evoluindo
+          constantemente com o apoio de uma comunidade global.
+        </p>
+      </section>
 
-resultado <- add(5, 3)</code></pre>
-        </section>
-        
-        <section class="structures">
-            <h2>Estruturas de dados</h2>
-            <p>R fornece várias estruturas de dados para armazenar dados, como vetores, listas, matrizes, quadros de dados e fatores. Cada estrutura serve a um propósito específico e pode ser manipulada usando funções integradas.</p>
-        </section>
+      <section class="syntax">
+        <h2>Introdução à Linguagem R</h2>
+        <p>
+          R é uma linguagem de programação e ambiente de software livre
+          utilizada para computação estatística e gráficos. Criada originalmente
+          por Ross Ihaka e Robert Gentleman, R rapidamente se tornou uma
+          ferramenta indispensável para estatísticos, cientistas de dados e
+          pesquisadores. Mantida pela R Foundation for Statistical Computing, a
+          linguagem é valorizada por sua flexibilidade e vasta gama de pacotes
+          disponíveis.
+        </p>
+        <p>
+          <strong>Principais usos:</strong> R é amplamente utilizada para
+          análises estatísticas avançadas, visualização de dados, machine
+          learning, análise de séries temporais e mineração de dados. Seus
+          principais usuários são das áreas de bioinformática, econometria,
+          ciências sociais, marketing e finanças.
+        </p>
+        <p>
+          <strong>Comparação com outras linguagens:</strong> R é frequentemente
+          comparada com Python, SAS e SPSS. Sua vantagem reside na
+          especialização em estatísticas e visualização, oferecendo uma grande
+          variedade de pacotes e funções específicas. Python, por ser uma
+          linguagem de propósito geral, oferece versatilidade além da análise de
+          dados. SAS e SPSS, por serem softwares comerciais, oferecem suporte
+          robusto, mas R se destaca por ser open source e ter uma comunidade
+          ativa.
+        </p>
+      </section>
+
+      <section class="variables">
+        <h2>Fundamentos da Sintaxe</h2>
+        <p>
+          A sintaxe do R é clara e intuitiva, facilitando o aprendizado para
+          iniciantes. Alguns exemplos básicos incluem:
+        </p>
+        <ul>
+          <li><strong>Atribuição:</strong> <code>x <- 10</code></li>
+          <li>
+            <strong>Operações matemáticas:</strong> <code>soma <- x + 5</code>
+          </li>
+          <li>
+            <strong>Criação de vetores:</strong>
+            <code>vetor <- c(1, 2, 3, 4, 5)</code>
+          </li>
+          <li>
+            <strong>Funções básicas:</strong> <code>media <- mean(vetor)</code>
+          </li>
+        </ul>
+        <pre><code># Atribuição de valores a variáveis
+x <- 5
+y <- 10
+
+# Operações aritméticas
+soma <- x + y
+produto <- x * y
+
+# Funções básicas
+media <- mean(c(x, y))
+desvio_padrao <- sd(c(x, y))
+
+# Imprimir resultados
+print(soma)
+print(produto)
+print(media)
+print(desvio_padrao)</code></pre>
+      </section>
+
+      <section class="functions">
+        <h2>Manipulação de Dados</h2>
+        <p>
+          A manipulação de dados em R é facilitada por uma série de funções
+          nativas e pacotes adicionais. Subsetting permite selecionar partes
+          específicas de uma estrutura de dados, filtros são usados para
+          selecionar dados com base em condições lógicas, e operações com data
+          frames incluem a agregação, combinação e transformação de dados.
+          Pacotes como <code>dplyr</code> e <code>tidyr</code> oferecem
+          funcionalidades avançadas para manipulação eficiente de dados.
+        </p>
+        <pre><code># Subsetting
+sub_vetor <- vetor[1:3]
+sub_data_frame <- data_frame[data_frame$idade > 24, ]
+
+# Funções dplyr
+library(dplyr)
+
+# Selecionar colunas
+data_frame_selecionado <- select(data_frame, nome, idade)
+
+# Filtrar linhas
+data_frame_filtrado <- filter(data_frame, idade > 24)
+
+# Mutate: criar nova coluna
+data_frame_mutado <- mutate(data_frame, idade_5_anos = idade + 5)
+
+# Summarize: sumarizar dados
+resumo <- summarise(data_frame, media_idade = mean(idade))
+
+# Join: combinar data frames
+data_frame2 <- data.frame(
+  nome = c("Ana", "Bruno", "Carlos"),
+  cidade = c("São Paulo", "Rio de Janeiro", "Belo Horizonte")
+)
+
+data_frame_combinado <- left_join(data_frame, data_frame2, by = "nome")
+
+# Exibir resultados
+print(sub_vetor)
+print(sub_data_frame)
+print(data_frame_selecionado)
+print(data_frame_filtrado)
+print(data_frame_mutado)
+print(resumo)
+print(data_frame_combinado)</code></pre>
+      </section>
+
+      <section class="structures">
+        <h2>Estruturas de Dados em R</h2>
+        <p>
+          R oferece diversas estruturas de dados fundamentais, como vetores,
+          matrizes, listas e data frames. Cada uma dessas estruturas é útil para
+          diferentes tipos de análises e manipulações de dados.
+        </p>
+        <ul>
+          <li>
+            <strong>Vetores:</strong> Sequências de elementos do mesmo tipo.
+          </li>
+          <li><strong>Matrizes:</strong> Vetores bidimensionais.</li>
+          <li>
+            <strong>Listas:</strong> Coleções de elementos de diferentes tipos.
+          </li>
+          <li>
+            <strong>Data frames:</strong> Tabelas que permitem a manipulação e
+            análise de dados tabulares.
+          </li>
+        </ul>
+        <pre><code># Vetor
+vetor <- c(1, 2, 3, 4, 5)
+
+# Matriz
+matriz <- matrix(1:9, nrow = 3, ncol = 3)
+
+# Lista
+lista <- list(nome = "João", idade = 25, notas = c(7.5, 8.0, 9.0))
+
+# Data frame
+data_frame <- data.frame(
+  nome = c("Ana", "Bruno", "Carlos"),
+  idade = c(22, 25, 30),
+  nota = c(8.5, 9.0, 7.5)
+)
+
+# Exibir estruturas
+print(vetor)
+print(matriz)
+print(lista)
+print(data_frame)</code></pre>
+      </section>
+      <section class="structures">
+        <h2>Visualização de Dados</h2>
+        <h3>Gráficos Base</h3>
+        <p>
+          R é conhecido por suas capacidades gráficas robustas. A função
+          <code>plot</code> é uma das mais básicas e versáteis, permitindo a
+          criação de gráficos de dispersão, linhas e barras com facilidade.
+          Outras funções gráficas básicas incluem <code>hist</code> para
+          histogramas e <code>boxplot</code> para diagramas de caixa.
+        </p>
+        <pre><code># Gráfico de dispersão
+plot(data_frame$idade, data_frame$nota, main = "Idade vs Nota", xlab = "Idade", ylab = "Nota")
+
+# Histograma
+hist(data_frame$nota, main = "Distribuição das Notas", xlab = "Nota", breaks = 5)
+
+# Boxplot
+boxplot(data_frame$nota, main = "Boxplot das Notas", ylab = "Nota")</code></pre>
+
+        <h3>ggplot2</h3>
+        <p>
+          Para visualizações mais avançadas e personalizáveis, o pacote
+          <code>ggplot2</code> é amplamente utilizado. Desenvolvido por Hadley
+          Wickham, <code>ggplot2</code> implementa a gramática dos gráficos,
+          permitindo a construção de visualizações complexas de maneira modular
+          e intuitiva. Com <code>ggplot2</code>, usuários podem criar gráficos
+          de alta qualidade, ajustando detalhes como cores, formas, facetas e
+          temas.
+        </p>
+        <pre><code># Carregar pacote ggplot2
+library(ggplot2)
+
+# Gráfico de dispersão com ggplot2
+ggplot(data_frame, aes(x = idade, y = nota)) +
+  geom_point() +
+  labs(title = "Idade vs Nota", x = "Idade", y = "Nota")
+
+# Gráfico de barras com ggplot2
+ggplot(data_frame, aes(x = nome, y = nota)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Notas por Nome", x = "Nome", y = "Nota")
+
+# Histograma com ggplot2
+ggplot(data_frame, aes(x = nota)) +
+  geom_histogram
+  (binwidth = 1, fill = "blue", color = "black") +
+  labs(title = "Distribuição das Notas", x = "Nota", y = "Contagem")
+  # Boxplot com ggplot2
+  ggplot(data_frame, aes(x = nome, y = nota)) +
+    geom_boxplot() +
+    labs(title = "Boxplot das Notas por Nome", x = "Nome", y = "Nota")
+  
+  # Gráfico de linha com ggplot2
+  ggplot(data_frame, aes(x = idade, y = nota, group = nome)) +
+    geom_line() +
+    labs(title = "Evolução da Nota por Idade", x = "Idade", y = "Nota")
+  </code></pre>
+      </section>
+      <section class="structures">
+        <h2>Recursos Avançados</h2>
+        <p>
+          R oferece uma vasta gama de recursos avançados para análise
+          estatística e visualização de dados:
+        </p>
+        <ul>
+          <li>
+            <strong>Modelagem Estatística:</strong> Utilização de modelos
+            lineares generalizados, análise de séries temporais, e métodos de
+            machine learning.
+          </li>
+          <li>
+            <strong>Programação Funcional:</strong> Implementação de programação
+            funcional com funções de alta ordem como <code>apply</code>,
+            <code>lapply</code>, e <code>sapply</code>.
+          </li>
+          <li>
+            <strong>Visualização Interativa:</strong> Criação de dashboards e
+            aplicações web interativas com o pacote <code>shiny</code>.
+          </li>
+          <li>
+            <strong>Big Data:</strong> Manipulação e análise de grandes
+            conjuntos de dados com pacotes como <code>data.table</code> e
+            <code>SparkR</code>.
+          </li>
+        </ul>
+      </section>
+      <section class="structures">
+        <h2>Ferramentas de Desenvolvimento</h2>
+        <p>Para desenvolver em R, diversas ferramentas estão disponíveis:</p>
+        <ul>
+          <li>
+            <strong>RStudio:</strong> Um ambiente de desenvolvimento integrado
+            (IDE) projetado especificamente para R, oferecendo editor de código,
+            console, e visualizações integradas.
+          </li>
+          <li>
+            <strong>Jupyter Notebooks:</strong> Utilizado para criar documentos
+            que combinam código R executável com texto formatado, equações e
+            visualizações interativas.
+          </li>
+          <li>
+            <strong>VSCode:</strong> Editor de código fonte com suporte para R
+            através de extensões, oferecendo uma experiência de desenvolvimento
+            flexível.
+          </li>
+        </ul>
+      </section>
+      <section class="video-tutorial">
+        <h2>Tutorial em Vídeo</h2>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/piUPkRZH6yM?si=qfATgIsNmWsrCtRF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
     </main>
     <footer class="footer">
-        <p>Feito por: Heitor Leite - 3°C</p>
+      <p>Feito por: Heitor Leite - 3°C</p>
     </footer>
-</body>
+  </body>
 </html>
